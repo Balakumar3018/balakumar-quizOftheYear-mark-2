@@ -4,7 +4,8 @@ const username=readlineSync.question("What is your name ? ")
 console.log("Welcome "+username+" To 'Quiz of the year '")
 //function writing to check question and answer
 let score=0;
-function checkAnswer(question,answer){
+// function checkAnswer(question,answer){
+  const checkAnswer=(question,answer)=>{
   const useranswer=readlineSync.question(question);
   if(useranswer === answer){
     console.log("You are answered: "+ useranswer +" is Right !")
